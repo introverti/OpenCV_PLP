@@ -6,8 +6,8 @@
 * openCV 3.4.12
 ### 检测QRcode并解码
 使用了OpenCV库的内置函数 [cv::QRCodeDetector Class](https://docs.opencv.org/master/de/dc3/classcv_1_1QRCodeDetector.html)  
-detectAndDecode 会返回包含有QRCode的灰度图像，一个包含了QRCode四个顶点坐标的一行四列的矩阵和进过矫正(正方形化)二进制化的QR码.  
-Mat 内元素类型可以用 对象.()检测，但是返回的是一个INT,需要对照下表：  
+`detectAndDecode` 会返回包含有QRCode的灰度图像，一个包含了QRCode四个顶点坐标的一行四列的矩阵和进过矫正(正方形化)二进制化的QR码.  
+Mat 内元素类型可以用 `Mat.type()` 检测，但是返回的是一个INT,需要对照下表：  
  
  type   | C1 | C2 | C3 | C4 | C(5) | C(6) | C(7) | C(8) |  
 --------|----|----|----|----|------|------|------|------|  
