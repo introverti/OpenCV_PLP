@@ -1,9 +1,9 @@
 # OpenCV_PLP
  from 0 to ?
 ## version
- C++ 11
- visual studio 2019 community
- openCV 3.4.12
+* C++ 11
+* visual studio 2019 community
+* openCV 3.4.12
 ### 检测QRcode并解码
 使用了OpenCV库的内置函数 [cv::QRCodeDetector Class](https://docs.opencv.org/master/de/dc3/classcv_1_1QRCodeDetector.html)
 detectAndDecode 会返回包含有QRCode的灰度图像，一个包含了QRCode四个顶点坐标的一行四列的矩阵和进过矫正(正方形化)二进制化的QR码.  
