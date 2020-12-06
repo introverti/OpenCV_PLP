@@ -20,8 +20,8 @@ Mat 内元素类型可以用 对象.()检测，但是返回的是一个INT,需�
  CV_64F |  6 | 14 | 22 | 30 |   38 |   46 |   54 |   62 |  
 
 我们程序里的Mat bbox 返回值为13，即C2 CV_32F型，C2说明它是双通道数 32F说明是32float.  
-注意应为OPENCV的rows和cols是反过来的，所以对应 **Mat.at&ltfloat&gt(y,x)**，小括号内是数据的地址 **(rows，cols)**.  
-对应双通道数，应该使用 **Mat.at'<'vec2f'>'(y,x)** 来读取数据.  
+注意应为OPENCV的rows和cols是反过来的，所以对应 `Mat.at<float>t(y,x)`，小括号内是数据的地址 **(rows，cols)**.  
+对应双通道数，应该使用 `Mat.at<vec2f>(y,x)` 来读取数据.  
 虽然我们获得的bbox是一个1行4列的矩阵，但是其中存储了8个float数，因为每个元素是一个双通道的vector.
 
 ### 安装与配置
